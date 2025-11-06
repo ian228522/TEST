@@ -1,0 +1,26 @@
+/* 基底樣式與背景圖 */
+*{box-sizing:border-box}
+html,body{height:100%}
+body{
+  margin:0; overflow:hidden;
+  background:#070b12;
+  font: 14px/1.6 system-ui, -apple-system, Segoe UI, Roboto, Noto Sans TC, sans-serif;
+  color:#dfe7ff;
+}
+.bg{
+  position:fixed; inset:0;
+  background: #0b101a url('images/bg.webp') center/cover no-repeat fixed;
+  filter: brightness(.9) saturate(1.05);
+  transform: scale(1.02);
+}
+#stars{
+  position:fixed; inset:0; pointer-events:none;
+}
+.hint{
+  position: fixed; left:50%; transform: translateX(-50%);
+  bottom: 16px; padding:8px 12px; border-radius:10px;
+  color:#a9bad2; background: rgba(0,0,0,.35);
+  border: 1px solid rgba(255,255,255,.08);
+  backdrop-filter: blur(6px) saturate(1.2);
+  user-select:none;
+}
