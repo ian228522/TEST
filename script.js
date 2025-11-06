@@ -25,9 +25,9 @@ function initStars(){
       r: (layer===1? 0.8 : layer===2? 0.6 : 0.5) * DPR + Math.random()*0.8*DPR,
       a: baseA,
       aDir: Math.random() < 0.5 ? 1 : -1,
-      aSpeed: (0.002 + Math.random()*0.004) * (layer===3?0.5:1),
-      vx: (Math.random()*0.02 + 0.01) * (layer===1? 0.25 : layer===2? 0.15 : 0.08) * DPR,
-      vy: (Math.random()*0.02 + 0.01) * (layer===1? 0.07 : layer===2? 0.05 : 0.03) * DPR
+      aSpeed: (0.002 + Math.random()*0.004) * (layer===3?0.5:1) * 2,
+        vx: (Math.random()*0.02 + 0.01) * (layer===1? 0.25 : layer===2? 0.15 : 0.08) * DPR * 2,
+        vy: (Math.random()*0.02 + 0.01) * (layer===1? 0.07 : layer===2? 0.05 : 0.03) * DPR * 2
     };
   });
 }
